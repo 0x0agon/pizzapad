@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/b/workspace/personal/keyboards/pizzapad/pizzapad.kicad_sch</source>
+    <date>Sunday, August 20, 2023 at 08:43:39 PM</date>
+    <tool>Eeschema (6.0.1-0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>pizzapad.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="B1">
+      <value>SPARKFUN_PRO_MICRO</value>
+      <footprint>kbd:ProMicro_v3.5</footprint>
+      <libsource lib="sparkfun_pro_micro" part="SPARKFUN_PRO_MICRO" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e8075398-2d85-4445-9abd-6d9c920f974f</tstamps>
+    </comp>
+    <comp ref="D0">
+      <value>1N4148WT</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30396.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148WT" description="75V 0.15A Fast switching Diode, SOD-523"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>259e25d2-8284-4ba3-8be7-b5d6c9221a49</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>1N4148WT</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30396.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148WT" description="75V 0.15A Fast switching Diode, SOD-523"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a82fa800-eb32-4737-9f0f-39a9e4785de3</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>1N4148WT</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30396.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148WT" description="75V 0.15A Fast switching Diode, SOD-523"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>75d2e9f5-2d03-4c13-a2f8-2a60af783e20</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>1N4148WT</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30396.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148WT" description="75V 0.15A Fast switching Diode, SOD-523"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91c83fe0-a7ca-4710-8227-974408bd927e</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>1N4148WT</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30396.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148WT" description="75V 0.15A Fast switching Diode, SOD-523"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b0e3034-0ea2-49b8-a041-227135236dc5</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>1N4148WT</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/ds30396.pdf</datasheet>
+      <libsource lib="Diode" part="1N4148WT" description="75V 0.15A Fast switching Diode, SOD-523"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f8b9f81-8983-4407-8370-346e23f143a8</tstamps>
+    </comp>
+    <comp ref="LED0">
+      <value>SK6812MINI_1</value>
+      <footprint>pizzapad:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="sk6812mini_1" part="SK6812MINI_1" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c98cf9d-07fc-423d-a535-19d04f9400e6</tstamps>
+    </comp>
+    <comp ref="LED1">
+      <value>SK6812MINI_1</value>
+      <footprint>pizzapad:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="sk6812mini_1" part="SK6812MINI_1" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dd9fa573-9b09-41be-ae9b-5bb281335dcc</tstamps>
+    </comp>
+    <comp ref="LED2">
+      <value>SK6812MINI_1</value>
+      <footprint>pizzapad:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="sk6812mini_1" part="SK6812MINI_1" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a7fafd36-6e85-41f3-85d9-aa2293995d74</tstamps>
+    </comp>
+    <comp ref="LED3">
+      <value>SK6812MINI_1</value>
+      <footprint>pizzapad:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="sk6812mini_1" part="SK6812MINI_1" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>017d8092-c118-4aaf-b3de-5f8924aa6413</tstamps>
+    </comp>
+    <comp ref="LED4">
+      <value>SK6812MINI_1</value>
+      <footprint>pizzapad:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="sk6812mini_1" part="SK6812MINI_1" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cce0bc68-6843-4f01-84fc-d14fcad683bc</tstamps>
+    </comp>
+    <comp ref="LED5">
+      <value>SK6812MINI_1</value>
+      <footprint>pizzapad:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</datasheet>
+      <libsource lib="sk6812mini_1" part="SK6812MINI_1" description="RGB LED with integrated controller"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42e2920b-5a7f-498b-a69f-cbbe3a9f6d66</tstamps>
+    </comp>
+    <comp ref="RE_3_1">
+      <value>CHERRY-MX-ENCODER</value>
+      <footprint>pizzapad:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm</footprint>
+      <libsource lib="cherry-mx-encoder" part="CHERRY-MX-ENCODER" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b33b5f64-7a56-471a-af09-6bbd3ed67480 85c10adc-c5a8-419e-b43f-94dd47450fd1</tstamps>
+    </comp>
+    <comp ref="S0">
+      <value>MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY</value>
+      <footprint>pizzapad:Kailh-CPG151101S11_MX_Socket-1.00u</footprint>
+      <libsource lib="momentary-switch-spst-led-pth-cherry" part="MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b6105c06-25cf-468d-9837-be0eca5a22e8</tstamps>
+    </comp>
+    <comp ref="S1">
+      <value>MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY</value>
+      <footprint>pizzapad:Kailh-CPG151101S11_MX_Socket-1.00u</footprint>
+      <libsource lib="momentary-switch-spst-led-pth-cherry" part="MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13b7e3a3-d268-4c8e-9cf7-00c7d983e9d3</tstamps>
+    </comp>
+    <comp ref="S2">
+      <value>MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY</value>
+      <footprint>pizzapad:Kailh-CPG151101S11_MX_Socket-1.00u</footprint>
+      <libsource lib="momentary-switch-spst-led-pth-cherry" part="MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5bfbc655-970a-457b-9fe9-76636f6a77b0</tstamps>
+    </comp>
+    <comp ref="S3">
+      <value>MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY</value>
+      <footprint>pizzapad:Kailh-CPG151101S11_MX_Socket-1.00u</footprint>
+      <libsource lib="momentary-switch-spst-led-pth-cherry" part="MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee1601e9-1792-44be-932e-022ad5b32061</tstamps>
+    </comp>
+    <comp ref="S4">
+      <value>MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY</value>
+      <footprint>pizzapad:Kailh-CPG151101S11_MX_Socket-1.00u</footprint>
+      <libsource lib="momentary-switch-spst-led-pth-cherry" part="MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9f38c45-d228-48f7-8169-cab254ef90ca</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPST</value>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="pizzapad.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>51c3ef7c-84e9-4b8d-979b-72b2fa75e9ff</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Diode" part="1N4148WT">
+      <description>75V 0.15A Fast switching Diode, SOD-523</description>
+      <docs>https://www.diodes.com/assets/Datasheets/ds30396.pdf</docs>
+      <footprints>
+        <fp>D*SOD?523*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4148WT</field>
+        <field name="Footprint">Diode_SMD:D_SOD-523</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/ds30396.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="cherry-mx-encoder" part="CHERRY-MX-ENCODER">
+      <fields>
+        <field name="Reference">RE_3_0</field>
+        <field name="Value">CHERRY-MX-ENCODER</field>
+        <field name="Footprint">Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+        <pin num="D" name="1" type="passive"/>
+        <pin num="E" name="2" type="passive"/>
+        <pin num="S1" name="1" type="passive"/>
+        <pin num="S2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="momentary-switch-spst-led-pth-cherry" part="MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY">
+      <fields>
+        <field name="Reference">S3</field>
+        <field name="Value">MOMENTARY-SWITCH-SPST-LED-PTH-CHERRY</field>
+        <field name="Footprint">Keyswitch:Kailh-CPG151101S11_MX_Socket-1.00u</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="K" name="C" type="passive"/>
+        <pin num="S1" name="1" type="passive"/>
+        <pin num="S2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sk6812mini_1" part="SK6812MINI_1">
+      <description>RGB LED with integrated controller</description>
+      <docs>https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</docs>
+      <footprints>
+        <fp>LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">LED8</field>
+        <field name="Value">SK6812MINI_1</field>
+        <field name="Footprint">LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm</field>
+        <field name="Datasheet">https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="DOUT" type="output"/>
+        <pin num="3" name="VSS" type="power_in"/>
+        <pin num="4" name="DIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="sparkfun_pro_micro" part="SPARKFUN_PRO_MICRO">
+      <fields>
+        <field name="Reference">B1</field>
+        <field name="Value">SPARKFUN_PRO_MICRO</field>
+        <field name="Footprint">dumbpad:SPARKFUN_PRO_MICRO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TXO" type="bidirectional"/>
+        <pin num="2" name="RXI" type="bidirectional"/>
+        <pin num="3" name="GND@1" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="2" type="bidirectional"/>
+        <pin num="6" name="*3" type="bidirectional"/>
+        <pin num="7" name="4" type="bidirectional"/>
+        <pin num="8" name="*5" type="bidirectional"/>
+        <pin num="9" name="*6" type="bidirectional"/>
+        <pin num="10" name="7" type="bidirectional"/>
+        <pin num="11" name="8" type="bidirectional"/>
+        <pin num="12" name="*9" type="bidirectional"/>
+        <pin num="13" name="*10" type="bidirectional"/>
+        <pin num="14" name="11(MOSI)" type="bidirectional"/>
+        <pin num="15" name="12(MISO)" type="bidirectional"/>
+        <pin num="16" name="13(SCK)" type="bidirectional"/>
+        <pin num="17" name="A0" type="bidirectional"/>
+        <pin num="18" name="A1" type="bidirectional"/>
+        <pin num="19" name="A2" type="bidirectional"/>
+        <pin num="20" name="A3" type="bidirectional"/>
+        <pin num="21" name="VCC" type="power_in"/>
+        <pin num="22" name="RESET" type="bidirectional"/>
+        <pin num="23" name="GND@2" type="power_in"/>
+        <pin num="24" name="RAW" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Diode">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Diode.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="cherry-mx-encoder">
+      <uri>/Users/b/workspace/personal/keyboards/pizzapad/special_symbols/cherry-mx-encoder.kicad_sym</uri>
+    </library>
+    <library logical="momentary-switch-spst-led-pth-cherry">
+      <uri>/Users/b/workspace/personal/keyboards/pizzapad/special_symbols/momentary-switch-spst-led-pth-cherry.kicad_sym</uri>
+    </library>
+    <library logical="sk6812mini_1">
+      <uri>/Users/b/workspace/personal/keyboards/pizzapad/special_symbols/sk6812mini_1.kicad_sym</uri>
+    </library>
+    <library logical="sparkfun_pro_micro">
+      <uri>/Users/b/workspace/personal/keyboards/pizzapad/special_symbols/sparkfun_pro_micro.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/COL0">
+      <node ref="B1" pin="8" pinfunction="*5" pintype="bidirectional"/>
+      <node ref="S0" pin="S2" pinfunction="2" pintype="passive"/>
+      <node ref="S3" pin="S2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="2" name="/COL1">
+      <node ref="B1" pin="9" pinfunction="*6" pintype="bidirectional"/>
+      <node ref="S1" pin="S2" pinfunction="2" pintype="passive"/>
+      <node ref="S4" pin="S2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="3" name="/COL2">
+      <node ref="B1" pin="10" pinfunction="7" pintype="bidirectional"/>
+      <node ref="RE_3_1" pin="E" pinfunction="2" pintype="passive"/>
+      <node ref="RE_3_1" pin="S2" pinfunction="2" pintype="passive"/>
+      <node ref="S2" pin="S2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="4" name="/ENCODER0_L0">
+      <node ref="B1" pin="14" pinfunction="11(MOSI)" pintype="bidirectional"/>
+      <node ref="RE_3_1" pin="A" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="5" name="/ENCODER0_L1">
+      <node ref="B1" pin="7" pinfunction="4" pintype="bidirectional"/>
+      <node ref="RE_3_1" pin="B" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="6" name="/KEY_LEDS">
+      <node ref="B1" pin="5" pinfunction="2" pintype="bidirectional"/>
+      <node ref="LED0" pin="4" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="7" name="/NC{slash}RX{slash}D2">
+      <node ref="B1" pin="2" pinfunction="RXI" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/NC{slash}TX{slash}D3">
+      <node ref="B1" pin="1" pinfunction="TXO" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/RAW">
+      <node ref="B1" pin="24" pinfunction="RAW" pintype="power_in"/>
+    </net>
+    <net code="10" name="/RESET">
+      <node ref="B1" pin="22" pinfunction="RESET" pintype="bidirectional"/>
+      <node ref="SW1" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="11" name="/ROW0">
+      <node ref="B1" pin="20" pinfunction="A3" pintype="bidirectional"/>
+      <node ref="D0" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+    </net>
+    <net code="12" name="/ROW1">
+      <node ref="B1" pin="19" pinfunction="A2" pintype="bidirectional"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+    </net>
+    <net code="13" name="GND">
+      <node ref="B1" pin="23" pinfunction="GND@2" pintype="power_in"/>
+      <node ref="B1" pin="3" pinfunction="GND@1" pintype="power_in"/>
+      <node ref="B1" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="LED0" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED1" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED2" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED3" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED4" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="LED5" pin="3" pinfunction="VSS" pintype="power_in"/>
+      <node ref="SW1" pin="2" pinfunction="B" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(D0-Pad2)">
+      <node ref="D0" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="S0" pin="S1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="S1" pin="S1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="S2" pin="S1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="S3" pin="S1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="S4" pin="S1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="RE_3_1" pin="D" pinfunction="1" pintype="passive"/>
+      <node ref="RE_3_1" pin="S1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(LED0-Pad2)">
+      <node ref="LED0" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED1" pin="4" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="21" name="Net-(LED1-Pad2)">
+      <node ref="LED1" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED2" pin="4" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="22" name="Net-(LED2-Pad2)">
+      <node ref="LED2" pin="2" pinfunction="DOUT" pintype="output"/>
+      <node ref="LED5" pin="4" pinfunction="DIN" pintype="input"/>
+    </net>
+    <net code="23" name="Net-(LED3-Pad4)">
+      <node ref="LED3" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="LED4" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="24" name="Net-(LED4-Pad4)">
+      <node ref="LED4" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="LED5" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="25" name="VCC">
+      <node ref="B1" pin="21" pinfunction="VCC" pintype="power_in"/>
+      <node ref="LED0" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED1" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED2" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED3" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED4" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="LED5" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="RE_3_1" pin="C" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="26" name="unconnected-(B1-Pad6)">
+      <node ref="B1" pin="6" pinfunction="*3" pintype="bidirectional"/>
+    </net>
+    <net code="27" name="unconnected-(B1-Pad11)">
+      <node ref="B1" pin="11" pinfunction="8" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="unconnected-(B1-Pad12)">
+      <node ref="B1" pin="12" pinfunction="*9" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="unconnected-(B1-Pad13)">
+      <node ref="B1" pin="13" pinfunction="*10" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="unconnected-(B1-Pad15)">
+      <node ref="B1" pin="15" pinfunction="12(MISO)" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="unconnected-(B1-Pad16)">
+      <node ref="B1" pin="16" pinfunction="13(SCK)" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="unconnected-(B1-Pad17)">
+      <node ref="B1" pin="17" pinfunction="A0" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="unconnected-(B1-Pad18)">
+      <node ref="B1" pin="18" pinfunction="A1" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="unconnected-(LED3-Pad2)">
+      <node ref="LED3" pin="2" pinfunction="DOUT" pintype="output"/>
+    </net>
+    <net code="35" name="unconnected-(S0-PadA)">
+      <node ref="S0" pin="A" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="36" name="unconnected-(S0-PadK)">
+      <node ref="S0" pin="K" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="37" name="unconnected-(S1-PadA)">
+      <node ref="S1" pin="A" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="38" name="unconnected-(S1-PadK)">
+      <node ref="S1" pin="K" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="39" name="unconnected-(S2-PadA)">
+      <node ref="S2" pin="A" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="40" name="unconnected-(S2-PadK)">
+      <node ref="S2" pin="K" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="41" name="unconnected-(S3-PadA)">
+      <node ref="S3" pin="A" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="42" name="unconnected-(S3-PadK)">
+      <node ref="S3" pin="K" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="43" name="unconnected-(S4-PadA)">
+      <node ref="S4" pin="A" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="44" name="unconnected-(S4-PadK)">
+      <node ref="S4" pin="K" pinfunction="C" pintype="passive"/>
+    </net>
+  </nets>
+</export>
