@@ -1,0 +1,55 @@
+{
+    "keyboard_name": "pizzapad",
+    "maintainer": "0x0agon",
+    "manufacturer": "8centlabs",
+    "url": "https://www.github.com/0x0agon/pizzapad",
+    "bootloader_instructions": "Press the button to the left of the microcontroller marked RESET",
+    "tags": ["split", "rgb"],
+
+    "development_board": "promicro",
+    "pin_compatible": "promicro",
+
+    "bootmagic": {
+        "matrix": [0, 0]
+    },
+
+    "diode_direction": "COL2ROW",
+    "matrix_pins": {
+        "cols": ["C6", "D7", "E6"],
+        "rows": ["F4", "F5"]
+    },
+
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+
+                {"matrix": [1, 0], "x": 0, "y": 1},
+                {"matrix": [1, 1], "x": 1, "y": 1},
+                {"matrix": [1, 2], "x": 2, "y": 1}
+            ]
+        }
+    },
+
+    "encoder": {
+        "rotary": [
+            {
+                "pin_a": "B2",
+                "pin_b": "D4",
+                "resolution": 4
+            }
+        ]
+    },
+
+    "usb": {
+        "device_version": "0.1.0",
+        "pid": "0x23B0",
+        "vid": "0x0A0A"
+    },
+
+    "ws2812": {
+        "pin": "D1"
+    }
+}
