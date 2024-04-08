@@ -18,6 +18,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 #include "print.h"
 
+enum layer_names (
+    _BASE,
+    _MEDIA,
+    _FN
+);
+
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
@@ -50,7 +56,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // clang-format on
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
-    uprintf("hi there!\n");
     uprintf("rotation is clockwise? %b", clockwise);
     switch (get_highest_layer(layer_state)) {
         case 0:
@@ -91,4 +96,41 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
             break;
     }
     return false;
+}
+
+
+// define rgb light layers
+const rgblight_segment_t PROGMEM layer1[] = RGBLIGHT_LAYER_SEGMENTS(
+    (0, 5, HSV_GOLD)
+);
+const rgblight_segment_t PROGMEM layer2[] = RGBLIGHT_LAYER_SEGMENTS(
+    (0, 5, HSV_CYAN)
+);
+const rgblight_segment_t PROGMEM layer3[] = RGBLIGHT_LAYER_SEGMENTS(
+    (0, 5, HSV_GREEN)
+);
+
+// Now define the array of layers. Later layers take precedence
+const rgblight_segment_t* const PROGMEM custom_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
+    layer1,
+    layer2,
+    layer3
+
+);
+
+void keyboard_post_init_user(void) {
+    // Enable the LED layers
+    rgblight_layers = custom_rgb_layers;
+}
+
+// now the code for actually updating the rgb light layers
+layer_state_t layer_state_set_user(layer_state_t state) {
+    switch (get_highest_layer(state)) {
+    case _BASE:
+        rgblight_set_layer_state(0, true);
+    case _MEDIA:
+        rgblight_set_layer_state(1, true);
+    case _FN:
+        rgblight_set_layer_state(2, true);
+    }
 }
