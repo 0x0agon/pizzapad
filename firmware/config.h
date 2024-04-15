@@ -35,6 +35,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_DEFAULT_VAL 200
 #define RGBLIGHT_DEFAULT_SAT 200
 #define RGBLIGHT_DEFAULT_ON true
+#define RGBLIGHT_EFFECT_ALTERNATING true
+#define RGBLIGHT_EFFECT_BREATHING true
+#define RGBLIGHT_EFFECT_TWINKLE true
 
 // #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_BREATHING
 
@@ -80,4 +83,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define ENABLE_RGB_MATRIX_SOLID_SPLASH
 //#define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
-#endif
+//#endif

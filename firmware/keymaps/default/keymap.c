@@ -18,119 +18,124 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 #include "print.h"
 
-enum layer_names (
-    _BASE,
-    _MEDIA,
-    _FN
-);
+enum layer_names {
+    _MDIA,
+    _SCRL,
+    _FN,
+    _RGB
+};
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
-            BASE LAYER - Num Pad
+            MDIA LAYER - Media
     /-------------------------------------------`
-    |             |    1    |    2    |    3    |
-    |             |---------|---------|---------|
-    |             |    4    |    5    |   TT1   |
+    |             | Play/Pause |    Mute    |   Sleep   |
+    |             |------------|------------|-----------|
+    |             | Prv Track  | Next Track | FN layer |
     \-------------------------------------------'
     */
-    [0] = LAYOUT(
-                    KC_P1,      KC_P2,    KC_P3,
-                    KC_P4,      KC_P5,    TO(1)
+    [_MDIA] = LAYOUT(
+                    KC_MPLY,      KC_MUTE,    KC_SLEP,
+                    KC_MPRV,      KC_MNXT,    TO(_FN)
+    ),
+    /*
+            SUB LAYER  - FN controls, Modes on encoder
+    /-------------------------------------------`
+    |             | Print Screen  | Mission Control |    Sleep    |
+    |             |---------------|-----------------|-------------|
+    |             |  Teams Mute   |    Zoom Mute    |  SCRL layer |
+    \-------------------------------------------'
+    */
+    [_FN] = LAYOUT(
+                    LCTL(LSFT(LGUI(KC_P4))),   KC_MCTL ,     KC_SLEP,
+                    LCTL(LSFT(KC_M)),     LSFT(LGUI(KC_A)),    TO(_SCRL)
+                    // KC_P6,      KC_P7,    KC_P8,
+                    // KC_P9,      KC_P0,    TO(0)
+    ),
+    /*
+            SUB LAYER  - SCRL controls, scrolling
+    /-------------------------------------------`
+    |             | Speed 0  | Speed 2 | Sleep |
+    |             |---------|---------|---------|
+    |             | Sroll Left | Scroll Right | RGB Layer |
+    \-------------------------------------------'
+    */
+    [_SCRL] = LAYOUT(
+                    KC_ACL0,    KC_ACL2,     KC_SLEP,
+                    KC_WH_R,     KC_WH_L,    TO(_RGB)
+                    // KC_P6,      KC_P7,    KC_P8,
+                    // KC_P9,      KC_P0,    TO(0)
     ),
     /*
             SUB LAYER  - RGB controls, Modes on encoder
     /-------------------------------------------`
-    |             | On/Off  | Bright- | Bright+ |
+    |             | On/Off  | No Anim | Sleep |
     |             |---------|---------|---------|
-    |             | Hue-    | Hue+    |  TT0    |
+    |             | Twinkle |  Breathe |  MDIA Layer |
     \-------------------------------------------'
     */
-    [1] = LAYOUT(
-                    RGB_TOG,    RGB_VAD,     RGB_VAI,
-                    RGB_HUD,     RGB_HUI,    TO(0)
+    [_RGB] = LAYOUT(
+                    RGB_TOG,    RGB_M_P,     KC_SLEP,
+                    RGB_M_TW,     RGB_M_B,    TO(_MDIA)
                     // KC_P6,      KC_P7,    KC_P8,
                     // KC_P9,      KC_P0,    TO(0)
     ),
 };
 // clang-format on
 
-bool encoder_update_user(uint8_t index, bool clockwise) {
-    uprintf("rotation is clockwise? %b", clockwise);
-    switch (get_highest_layer(layer_state)) {
-        case 0:
-            uprintf("case 0");
-            // main layer, volume
-            if (clockwise) {
-                tap_code(KC_VOLU);
-            } else {
-                tap_code(KC_VOLD);
-            }
-            break;
-        case 1:
-            uprintf("case 1");
-            // main layer, volume
-            if (clockwise) {
-                // tap_code(KC_VOLU);
-//                uprintf("Encoder CW\n");
-                rgblight_increase_hue();
-
-            } else {
-                // tap_code(KC_VOLD);
-//                uprintf("Encoder CCW\n");
-                rgblight_decrease_hue();
-            }
-            break;
-        default:
-            uprintf("case default");
-            // rgb control layer, effects
-            if (clockwise) {
-//                rgblight_step();
-//                uprintf("Encoder CW\n");
-                tap_code(KC_SLSH);
-            } else {
-//                rgblight_step_reverse();
-//                uprintf("Encoder CCW\n");
-                tap_code(KC_BSLS);
-            }
-            break;
-    }
-    return false;
-}
-
+// encoder mapping
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [_MDIA] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [_FN] = { ENCODER_CCW_CW(LGUI(KC_TAB), LSFT(LGUI(KC_TAB))) },
+    [_SCRL] = { ENCODER_CCW_CW(KC_WH_D, KC_WH_U)},
+    [_RGB] = { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) },
+};
+#endif
 
 // define rgb light layers
 const rgblight_segment_t PROGMEM layer1[] = RGBLIGHT_LAYER_SEGMENTS(
-    (0, 5, HSV_GOLD)
+    {0, 5, HSV_GOLD}
 );
 const rgblight_segment_t PROGMEM layer2[] = RGBLIGHT_LAYER_SEGMENTS(
-    (0, 5, HSV_CYAN)
+    {0, 5, HSV_RED}
 );
 const rgblight_segment_t PROGMEM layer3[] = RGBLIGHT_LAYER_SEGMENTS(
-    (0, 5, HSV_GREEN)
+    {0, 5, HSV_MAGENTA}
+);
+const rgblight_segment_t PROGMEM layer4[] = RGBLIGHT_LAYER_SEGMENTS(
+    {0, 5, HSV_TEAL}
 );
 
 // Now define the array of layers. Later layers take precedence
 const rgblight_segment_t* const PROGMEM custom_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
     layer1,
     layer2,
-    layer3
+    layer3,
+    layer4
 
 );
 
 void keyboard_post_init_user(void) {
+    debug_enable=true;
+    debug_matrix=true;
+    debug_keyboard=true;
     // Enable the LED layers
     rgblight_layers = custom_rgb_layers;
 }
 
 // now the code for actually updating the rgb light layers
 layer_state_t layer_state_set_user(layer_state_t state) {
-    switch (get_highest_layer(state)) {
-    case _BASE:
-        rgblight_set_layer_state(0, true);
-    case _MEDIA:
-        rgblight_set_layer_state(1, true);
-    case _FN:
-        rgblight_set_layer_state(2, true);
+    layer_state_t highest_layer = get_highest_layer(state);
+    rgblight_set_layer_state(0, highest_layer == _MDIA);
+    rgblight_set_layer_state(1, highest_layer == _FN);
+    rgblight_set_layer_state(2, highest_layer == _SCRL);
+    rgblight_set_layer_state(3, highest_layer == _RGB);
+    switch (highest_layer) {
+    case _RGB:
+        rgblight_mode(2);
     }
+
+    return state;
 }

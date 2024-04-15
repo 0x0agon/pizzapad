@@ -47,10 +47,10 @@ void keyboard_pre_init_kb(void) {
     keyboard_pre_init_user();
 }
 
-void shutdown_user(void) {
+//void shutdown_user(void) {
     // Shutdown LEDs
     // writePinLow(LED_00);
-}
+//}
 
 // layer_state_t layer_state_set_kb(layer_state_t state) {
 //     // Layer LEDs act as binary indication of current layer
@@ -81,11 +81,11 @@ void matrix_init_kb(void) {
     matrix_init_user();
 }
 
-void keyboard_post_init_user(void) {
-    debug_enable=true;
-    debug_matrix=true;
-    debug_keyboard=true;
-}
+//void keyboard_post_init_user(void) {
+//    debug_enable=true;
+//    debug_matrix=true;
+//    debug_keyboard=true;
+//}
 
 // bool led_update_kb(led_t led_state) {
 //     if (!led_update_user(led_state)) return false;
