@@ -32,8 +32,9 @@ pizzapad's firmware is based on The [QMK Project](https://github.com/qmk/qmk_fir
 4) Profit!
 
 #### Default key layout
-![Default layout](./images/keyboard-layout.jpg)
-The default has 4 layers. Switch layers by pressing the encoder in.
+![Default layout](./images/keyboard-layout.jpg)  
+The default has 4 layers.  
+Switch layers by pressing the encoder in.
 ##### Layer 1 - Media
 This layer focuses on media controls, with the encoder controlling volume
 
