@@ -20,8 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 enum layer_names {
     _MDIA,
-    _SCRL,
     _FN,
+    _SCRL,
     _RGB
 };
 

@@ -30,3 +30,18 @@ pizzapad's firmware is based on The [QMK Project](https://github.com/qmk/qmk_fir
 2) Create a folder called `pizzapad` in `qmk_firmware/keyboards`
 3) Build the firmware according to QMK's build instructions, pointing it to the `pizzapad` keyboard folder.
 4) Profit!
+
+#### Default key layout
+![Default layout](./images/keyboard-layout.jpg)
+The default has 4 layers. Switch layers by pressing the encoder in.
+##### Layer 1 - Media
+This layer focuses on media controls, with the encoder controlling volume
+
+##### Layer 2 - FN
+This layer focuses on some hopefully useful shortcuts. The encoder switches between active windows (simulates alt-tab)
+
+##### Layer 3 - Scroll
+This layer brings scrolling to the macropad. The encoder controls scrolling vertically, and buttons 4 + 5 control horizontal scrolling
+
+##### Layer 4 - RGB
+This layer controls the rgb indicator lights. The encoder turns brightness up and down. This layer isn't fully functional yet, but brightness controls should work.
