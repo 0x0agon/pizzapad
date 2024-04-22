@@ -23,7 +23,7 @@ To build a pizzapad you'll need
 |diode|5|1N4148WX-TP|1N4148WX-TPMSCT-ND|
 |10K ohm resistor|2|RMCF0805JT10k0|RMCF0805JT10k0CT-ND|
 
-### install firmware
+### Install firmware
 pizzapad's firmware is based on The [QMK Project](https://github.com/qmk/qmk_firmware)
 
 1) Download the base QMK firmware following the instructions on QMK's github page
@@ -35,14 +35,14 @@ pizzapad's firmware is based on The [QMK Project](https://github.com/qmk/qmk_fir
 ![Default layout](./images/keyboard-layout.jpg)  
 The default has 4 layers.  
 Switch layers by pressing the encoder in.
-##### Layer 1 - Media
+##### Layer 1 - Media [Gold]
 This layer focuses on media controls, with the encoder controlling volume
 
-##### Layer 2 - FN
+##### Layer 2 - FN [Red]
 This layer focuses on some hopefully useful shortcuts. The encoder switches between active windows (simulates alt-tab)
 
-##### Layer 3 - Scroll
+##### Layer 3 - Scroll [Magenta]
 This layer brings scrolling to the macropad. The encoder controls scrolling vertically, and buttons 4 + 5 control horizontal scrolling
 
-##### Layer 4 - RGB
+##### Layer 4 - RGB [Teal]
 This layer controls the rgb indicator lights. The encoder turns brightness up and down. This layer isn't fully functional yet, but brightness controls should work.
